@@ -3,65 +3,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Habitat | Honey Badger Fan Site</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Where it lives | Honey Badger HQ</title>
+  <meta name="description" content="A fun site for kids all about the honey badger.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="topic-habitat">
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
-      <a class="brand" href="index.html">Honey Badger</a>
-      <a href="habitat.html" aria-current="page">Habitat</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="classification.html">Classification</a>
-      <a href="diet.html">Diet</a>
-      <a href="anatomy.html">Anatomy</a>
-      <a href="reproduction.html">Reproduction</a>
-      <a href="behavior.html">Behavior</a>
+      <ul>
+        <li><a href="index.html"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
+        <li><a href="habitat.html" aria-current="page"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
+        <li><a href="gallery.html"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
+        <li><a href="classification.html"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
+        <li><a href="diet.html"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
+        <li><a href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
+        <li><a href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
+      </ul>
     </nav>
   </header>
 
   <main class="content">
     <header class="page-header">
-      <h1>Honey Badger Habitat</h1>
-      <p class="lead">Honey badgers are tough survivors. They live in more kinds of places than almost any other badger.</p>
+      <div>
+        <h1>Where Does It Live?</h1>
+        <p>Honey badgers live in hot, sunny places. They live in more places than almost any other badger!</p>
+      </div>
+      <img src="images/dry-ground.jpg" width="1200" height="850" alt="A honey badger walking across dry, dusty ground">
     </header>
 
     <section>
-      <h2>Where on earth is the honey badger found?</h2>
-      <p>Honey badgers live across most of <strong>Africa south of the Sahara</strong>, on the <strong>Arabian Peninsula</strong>, and in <strong>western Asia</strong> through Iran to <strong>India and Nepal</strong>.</p>
-      <figure class="map">
-        <img src="images/range-map.png" alt="Map showing the honey badger range in green across most of Africa, Arabia, western Asia, and India">
-        <figcaption>Honey badger range (green)</figcaption>
-        <p class="credit">Map: <a href="https://commons.wikimedia.org/wiki/File:Honey_Badger_area.png">Chermundy</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a></p>
-      </figure>
+      <h2>Where in the world?</h2>
+      <div class="two-col">
+        <div>
+          <p>Honey badgers live in <strong>Africa</strong>.</p>
+          <p>They also live in <strong>Arabia</strong> and <strong>India</strong>.</p>
+          <p>Can you find the green parts on the map? That is where honey badgers live!</p>
+        </div>
+        <figure class="map">
+          <img src="images/range-map.png" width="450" height="386" alt="A map. Green shows where honey badgers live: most of Africa, Arabia, and India." loading="lazy">
+          <figcaption>Green means honey badgers live there.</figcaption>
+          <p class="credit">Map: <a href="https://commons.wikimedia.org/wiki/File:Honey_Badger_area.png">Chermundy</a>, via Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>.</p>
+        </figure>
+      </div>
     </section>
 
     <section>
-      <h2>What natural surroundings does it need to thrive?</h2>
-      <p>Honey badgers are not picky. They do well in:</p>
-      <ul>
-        <li>Dry savannas and grasslands</li>
-        <li>Semi-deserts, such as the Kalahari</li>
-        <li>Open woodlands and forest edges</li>
-        <li>Rocky hills and mountains</li>
+      <h2>What kind of place does it need?</h2>
+      <ul class="fact-list">
+        <li><span class="emoji" aria-hidden="true">🌾</span><strong>Grassland</strong>: big open fields of grass</li>
+        <li><span class="emoji" aria-hidden="true">🏜️</span><strong>Dry land</strong>: hot places with little rain</li>
+        <li><span class="emoji" aria-hidden="true">🌳</span><strong>Woods</strong>: places with some trees</li>
+        <li><span class="emoji" aria-hidden="true">⛰️</span><strong>Hills</strong>: rocky places and mountains</li>
       </ul>
-      <p>What they need most is <strong>soil they can dig in</strong>, enough small animals to eat, and places to hide and rest. They usually avoid thick rainforest and the driest sand deserts.</p>
+      <p>Most of all, a honey badger needs <strong>dirt it can dig in</strong>. It also needs lots of small animals to eat.</p>
     </section>
 
     <section>
-      <h2>Where does the honey badger make its home?</h2>
-      <table class="fact-table">
-        <tr><th scope="row">In the ground?</th><td><strong>Yes, most of the time.</strong> Honey badgers dig their own burrows with their long front claws. A burrow is often a tunnel a few metres long with a sleeping room at the end.</td></tr>
-        <tr><th scope="row">In a tree?</th><td><strong>Rarely.</strong> They can climb trees to raid beehives or bird nests, but they do not live in trees.</td></tr>
-        <tr><th scope="row">Other?</th><td>They also rest in rock cracks, hollow logs, and burrows that other animals, such as aardvarks, have left behind.</td></tr>
-      </table>
-      <p class="fun-fact">A honey badger often uses a different burrow almost every night as it moves around its large home range.</p>
+      <h2>Where is its home?</h2>
+      <ul class="fact-list">
+        <li><span class="emoji" aria-hidden="true">🕳️</span><strong>In the ground? Yes!</strong> It digs a tunnel called a <a href="words.html#burrow">burrow</a>. It sleeps at the end of the tunnel.</li>
+        <li><span class="emoji" aria-hidden="true">🌲</span><strong>In a tree? Not really.</strong> It can climb trees to find food. But it does not live there.</li>
+        <li><span class="emoji" aria-hidden="true">🪨</span><strong>Other places?</strong> It also sleeps in cracks in rocks, in hollow logs, or in old holes dug by other animals.</li>
+      </ul>
+      <aside class="fun-fact"><h2>Did you know?</h2><p>A honey badger often sleeps in a different burrow almost every night!</p></aside>
+      <aside class="question"><h2>Think about it</h2><p>If you were a honey badger, would you rather sleep under the ground or in a tree?</p></aside>
     </section>
+
+    <aside class="project-box">
+      <h2>For your school project</h2>
+      <p>Copy this source:</p>
+      <p class="citation">Honey Badger HQ. "Where Does It Live?" 2026.</p>
+      <p><strong>Picture:</strong> Photo by Gerhard Mauracher, from Wikimedia Commons (CC BY-SA 4.0).</p>
+      <p><strong>Want more facts?</strong> <a class="external" href="https://simple.wikipedia.org/wiki/Honey_badger" rel="noopener">Simple English Wikipedia: Honey badger</a></p>
+    </aside>
 
   </main>
 
   <footer class="site-footer">
-    <p>Honey Badger Fan Site &middot; Team #2 &middot; Applying Professional Scrum</p>
+    <ul>
+      <li><a href="words.html">📖 Words to know</a></li>
+      <li><a href="grown-ups.html">For parents and teachers</a></li>
+    </ul>
+    <p>Honey Badger HQ · A fan site for the world's most fearless <a href="words.html#mustelid">mustelid</a>.</p>
   </footer>
 </body>
 </html>

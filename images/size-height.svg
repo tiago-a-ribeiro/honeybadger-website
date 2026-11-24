@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 160" role="img">
+  <title>A 6-year-old next to a honey badger. The badger comes up to the child's knee.</title>
+<line x1="10" y1="150" x2="290" y2="150" stroke="#8a7d68" stroke-width="3"/>
+  <g transform="translate(70 150) scale(1.0)">
+    <rect x="-9" y="-50" width="8" height="50" rx="4" fill="#7da7d9"/>
+    <rect x="1" y="-50" width="8" height="50" rx="4" fill="#7da7d9"/>
+    <rect x="-13" y="-92" width="26" height="46" rx="10" fill="#f28c6f"/>
+    <rect x="-20" y="-90" width="7" height="34" rx="3.5" fill="#f28c6f"/>
+    <rect x="13" y="-90" width="7" height="34" rx="3.5" fill="#f28c6f"/>
+    <circle cx="0" cy="-103" r="12" fill="#f1c27d"/>
+    <path d="M-12 -106 Q0 -122 12 -106 Q6 -112 0 -111 Q-6 -112 -12 -106 Z" fill="#5a3825"/>
+  </g>
+  <g transform="translate(130 108.2) scale(0.19)">
+  <path d="M335 118 Q362 100 368 112 Q360 128 338 132 Z" fill="#1d1b18"/>
+  <rect x="112" y="160" width="30" height="60" rx="12" fill="#1d1b18"/>
+  <rect x="158" y="165" width="30" height="55" rx="12" fill="#1d1b18"/>
+  <rect x="250" y="165" width="30" height="55" rx="12" fill="#1d1b18"/>
+  <rect x="296" y="160" width="30" height="60" rx="12" fill="#1d1b18"/>
+  <ellipse cx="225" cy="140" rx="120" ry="52" fill="#1d1b18"/>
+  <ellipse cx="88" cy="142" rx="52" ry="38" fill="#1d1b18"/>
+  <path d="M42 148 Q30 152 34 160 Q48 164 60 158 Z" fill="#1d1b18"/>
+  <path d="M58 128 Q90 96 150 100 Q230 80 335 108 Q348 114 340 126 Q250 112 150 124 Q100 128 62 140 Z" fill="#e8e4d8"/>
+  <circle cx="112" cy="110" r="9" fill="#e8e4d8"/>
+  <circle cx="76" cy="142" r="5" fill="#fff"/>
+  <circle cx="75" cy="142" r="3" fill="#1d1b18"/>
+  <circle cx="35" cy="154" r="4" fill="#5c564c"/>
+</g>
+  <line x1="55" y1="125" x2="250" y2="125" stroke="#f28c6f" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="70" y="20" text-anchor="middle" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="700" fill="#1d1b18">You</text>
+  <text x="200" y="100" text-anchor="middle" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="700" fill="#1d1b18">Honey badger</text>
+</svg>
