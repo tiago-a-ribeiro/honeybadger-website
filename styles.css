@@ -1,0 +1,158 @@
+:root {
+  --honey: #f2a516;
+  --honey-light: #fff4dc;
+  --ink: #1d1b18;
+  --stripe: #e8e4d8;
+  --muted: #5c564c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--honey-light);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  background: var(--ink);
+  color: #fff;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.site-nav .brand {
+  margin-right: auto;
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: var(--honey);
+}
+
+.site-nav a:not(.brand) {
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--honey);
+}
+
+main {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.hero h1 {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  margin: 0 0 1rem;
+}
+
+.hero .scientific-name {
+  font-style: italic;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.hero .purpose {
+  font-size: 1.15rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  background: var(--honey);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--ink);
+  color: var(--honey);
+}
+
+.hero-art svg {
+  width: 100%;
+  height: auto;
+}
+
+.sections h2 {
+  font-size: 1.75rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: block;
+  height: 100%;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  background: #fff;
+  border-top: 6px solid var(--honey);
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+  transition: transform 0.15s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--ink);
+  color: var(--stripe);
+  font-size: 0.9rem;
+}
+
+@media (width <= 700px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 2rem 0;
+  }
+}
