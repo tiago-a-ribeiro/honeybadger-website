@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img">
+  <title>A honey badger</title>
+<ellipse cx="200" cy="225" rx="160" ry="10" fill="#000" opacity="0.12"/><path d="M108 216 l-8 6 M116 218 l-6 7 M124 219 l-4 7" stroke="#e8e4d8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M335 118 Q362 100 368 112 Q360 128 338 132 Z" fill="#1d1b18"/>
+  <rect x="112" y="160" width="30" height="60" rx="12" fill="#1d1b18"/>
+  <rect x="158" y="165" width="30" height="55" rx="12" fill="#1d1b18"/>
+  <rect x="250" y="165" width="30" height="55" rx="12" fill="#1d1b18"/>
+  <rect x="296" y="160" width="30" height="60" rx="12" fill="#1d1b18"/>
+  <ellipse cx="225" cy="140" rx="120" ry="52" fill="#1d1b18"/>
+  <ellipse cx="88" cy="142" rx="52" ry="38" fill="#1d1b18"/>
+  <path d="M42 148 Q30 152 34 160 Q48 164 60 158 Z" fill="#1d1b18"/>
+  <path d="M58 128 Q90 96 150 100 Q230 80 335 108 Q348 114 340 126 Q250 112 150 124 Q100 128 62 140 Z" fill="#e8e4d8"/>
+  <circle cx="112" cy="110" r="9" fill="#e8e4d8"/>
+  <circle cx="76" cy="142" r="5" fill="#fff"/>
+  <circle cx="75" cy="142" r="3" fill="#1d1b18"/>
+  <circle cx="35" cy="154" r="4" fill="#5c564c"/>
+
+</svg>

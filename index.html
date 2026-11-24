@@ -3,75 +3,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Honey Badger Fan Site</title>
-  <meta name="description" content="A fan site all about the honey badger: where it lives, what it eats, and how it behaves.">
-  <link rel="stylesheet" href="styles.css">
+  <title>Honey Badger HQ</title>
+  <meta name="description" content="A fun site for kids all about the honey badger.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="topic-home">
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
-      <a class="brand" href="index.html" aria-current="page">Honey Badger</a>
-      <a href="habitat.html">Habitat</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="classification.html">Classification</a>
-      <a href="diet.html">Diet</a>
-      <a href="anatomy.html">Anatomy</a>
-      <a href="reproduction.html">Reproduction</a>
-      <a href="behavior.html">Behavior</a>
+      <ul>
+        <li><a href="index.html" aria-current="page"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
+        <li><a href="habitat.html"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
+        <li><a href="gallery.html"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
+        <li><a href="classification.html"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
+        <li><a href="diet.html"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
+        <li><a href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
+        <li><a href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="content">
     <section class="hero">
       <div>
-        <h1>Meet the Honey Badger</h1>
-        <p class="scientific-name">Mellivora capensis</p>
-        <p class="purpose">
-          This is a fan site for the honey badger. Here you can learn where it lives,
-          what it eats, how it raises its young, and why it has a reputation as one
-          of the boldest animals on earth.
-        </p>
-        <a class="button" href="habitat.html">Start exploring</a>
+        <h1>Meet the Honey Badger!</h1>
+        <p class="scientific-name">Its science name is Mellivora capensis.</p>
+        <p>The honey badger is small, but it is very brave. It digs, it climbs, and it is not scared of much!</p>
+        <p>On this site you can learn where it lives, what it eats, and how it stays safe.</p>
+        <a class="button" href="habitat.html">Let's explore! 🐾</a>
       </div>
-
-      <div class="hero-art">
-        <svg viewBox="0 0 400 240" role="img" aria-labelledby="badger-title">
-          <title id="badger-title">Illustration of a honey badger, a black animal with a pale grey stripe across its back</title>
-          <ellipse cx="200" cy="225" rx="160" ry="10" fill="#000" opacity="0.12"/>
-          <path d="M335 118 Q362 100 368 112 Q360 128 338 132 Z" fill="#1d1b18"/>
-          <rect x="112" y="160" width="30" height="60" rx="12" fill="#1d1b18"/>
-          <rect x="158" y="165" width="30" height="55" rx="12" fill="#1d1b18"/>
-          <rect x="250" y="165" width="30" height="55" rx="12" fill="#1d1b18"/>
-          <rect x="296" y="160" width="30" height="60" rx="12" fill="#1d1b18"/>
-          <path d="M108 216 l-8 6 M116 218 l-6 7 M124 219 l-4 7" stroke="#e8e4d8" stroke-width="3" stroke-linecap="round"/>
-          <ellipse cx="225" cy="140" rx="120" ry="52" fill="#1d1b18"/>
-          <ellipse cx="88" cy="142" rx="52" ry="38" fill="#1d1b18"/>
-          <path d="M42 148 Q30 152 34 160 Q48 164 60 158 Z" fill="#1d1b18"/>
-          <path d="M58 128 Q90 96 150 100 Q230 80 335 108 Q348 114 340 126 Q250 112 150 124 Q100 128 62 140 Z" fill="#e8e4d8"/>
-          <circle cx="112" cy="110" r="9" fill="#e8e4d8"/>
-          <circle cx="76" cy="142" r="5" fill="#fff"/>
-          <circle cx="75" cy="142" r="3" fill="#1d1b18"/>
-          <circle cx="35" cy="154" r="4" fill="#5c564c"/>
-        </svg>
-      </div>
+      <img src="images/badger.svg" width="400" height="240" alt="A drawing of a honey badger. It is black with a light gray stripe on its back.">
     </section>
 
-    <section class="sections" aria-labelledby="sections-title">
-      <h2 id="sections-title">Explore the site</h2>
+    <section>
+      <h2>What do you want to learn about?</h2>
       <ul class="card-grid">
-        <li><a class="card" href="habitat.html"><h3>Habitat</h3><p>Where on earth honey badgers live and make their homes.</p></a></li>
-        <li><a class="card" href="gallery.html"><h3>Gallery</h3><p>Pictures of honey badgers. Share your own!</p></a></li>
-        <li><a class="card" href="classification.html"><h3>Classification</h3><p>The scientific name, species, and sub-species.</p></a></li>
-        <li><a class="card" href="diet.html"><h3>Diet</h3><p>What honey badgers eat, how often, and how much.</p></a></li>
-        <li><a class="card" href="anatomy.html"><h3>Anatomy</h3><p>Size, lifespan, and their famously tough skin.</p></a></li>
-        <li><a class="card" href="reproduction.html"><h3>Reproduction</h3><p>How honey badgers mate and raise their young.</p></a></li>
-        <li><a class="card" href="behavior.html"><h3>Behavior</h3><p>How they hunt, defend themselves, and sleep.</p></a></li>
+        <li><a class="card topic-habitat" href="habitat.html"><span class="card-icon" aria-hidden="true">🌍</span><h3>Where it lives</h3><p>Find out where honey badgers live and sleep.</p></a></li>
+        <li><a class="card topic-gallery" href="gallery.html"><span class="card-icon" aria-hidden="true">📷</span><h3>Photos</h3><p>Look at real photos of honey badgers.</p></a></li>
+        <li><a class="card topic-classification" href="classification.html"><span class="card-icon" aria-hidden="true">🔬</span><h3>Its name</h3><p>Learn its science name and its animal family.</p></a></li>
+        <li><a class="card topic-diet" href="diet.html"><span class="card-icon" aria-hidden="true">🍯</span><h3>What it eats</h3><p>Bugs, snakes, honey, and more!</p></a></li>
+        <li><a class="card topic-anatomy" href="anatomy.html"><span class="card-icon" aria-hidden="true">📏</span><h3>Its body</h3><p>How big is a honey badger? Compare it to you!</p></a></li>
+        <li><a class="card topic-behavior" href="behavior.html"><span class="card-icon" aria-hidden="true">🐾</span><h3>How it acts</h3><p>Brave, clever, and a little bit stinky.</p></a></li>
       </ul>
     </section>
+
+    <aside class="project-box">
+      <h2>For your school project</h2>
+      <p>Copy this source:</p>
+      <p class="citation">Honey Badger HQ. "Meet the Honey Badger!" 2026.</p>
+      <p><strong>Picture:</strong> Drawing by Honey Badger HQ.</p>
+      <p><strong>Want more facts?</strong> <a class="external" href="https://simple.wikipedia.org/wiki/Honey_badger" rel="noopener">Simple English Wikipedia: Honey badger</a></p>
+    </aside>
+
   </main>
 
   <footer class="site-footer">
-    <p>Honey Badger Fan Site &middot; Team #2 &middot; Applying Professional Scrum</p>
+    <ul>
+      <li><a href="words.html">📖 Words to know</a></li>
+      <li><a href="grown-ups.html">For parents and teachers</a></li>
+    </ul>
+    <p>Honey Badger HQ · A fan site for the world's most fearless <a href="words.html#mustelid">mustelid</a>.</p>
   </footer>
 </body>
 </html>
