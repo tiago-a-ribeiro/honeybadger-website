@@ -156,3 +156,141 @@ main {
     padding: 2rem 0;
   }
 }
+
+.page-header {
+  padding: 2.5rem 0 1rem;
+}
+
+.page-header h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+
+.page-header .lead {
+  font-size: 1.15rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.content section {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+.fact-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fact-table th,
+.fact-table td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--stripe);
+  vertical-align: top;
+}
+
+.fact-table th {
+  width: 35%;
+}
+
+.fun-fact {
+  border-left: 6px solid var(--honey);
+  background: var(--honey-light);
+  padding: 0.75rem 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.credit {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.map {
+  max-width: 28rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-grid a {
+  display: block;
+  text-decoration: none;
+}
+
+.gallery-grid img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.15s;
+}
+
+.gallery-grid a:hover img {
+  transform: scale(1.03);
+}
+
+.photo-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.submit-form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 28rem;
+}
+
+.submit-form label {
+  font-weight: 600;
+}
+
+.submit-form input,
+.submit-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+}
+
+.submit-form button {
+  justify-self: start;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.thanks {
+  font-weight: 700;
+  color: #2e7d32;
+}
