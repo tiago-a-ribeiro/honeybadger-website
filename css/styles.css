@@ -270,7 +270,72 @@ figcaption {
 }
 
 .map {
-  max-width: 30rem;
+  max-width: 34rem;
+}
+
+.map-frame {
+  position: relative;
+}
+
+.map-frame img {
+  border-radius: 1rem;
+}
+
+.map-regions {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.region {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  cursor: pointer;
+}
+
+.region.is-active {
+  fill: rgb(255 217 138 / 65%);
+  stroke: var(--ink);
+}
+
+.region-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.region-button {
+  min-height: 3rem;
+  padding: 0.5rem 1rem;
+  border: 3px solid var(--accent);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.region-button.is-active {
+  background: var(--accent);
+  border-color: var(--ink);
+}
+
+.region-info {
+  min-height: 5rem;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  background: var(--honey-light);
+}
+
+.region-info p {
+  margin: 0;
 }
 
 .fun-fact,
