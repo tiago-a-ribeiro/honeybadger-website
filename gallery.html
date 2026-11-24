@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Honey Badger Fan Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main">
+      <a class="brand" href="index.html">Honey Badger</a>
+      <a href="habitat.html">Habitat</a>
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="classification.html">Classification</a>
+      <a href="diet.html">Diet</a>
+      <a href="anatomy.html">Anatomy</a>
+      <a href="reproduction.html">Reproduction</a>
+      <a href="behavior.html">Behavior</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <header class="page-header">
+      <h1>Honey Badger Gallery</h1>
+      <p class="lead">Click a picture to see it on its own page with more details.</p>
+    </header>
+
+    <section>
+      <ul class="gallery-grid">
+        <li><a href="gallery-1.html"><figure><img src="images/dry-ground.jpg" alt="A honey badger trots across dry, dusty ground with its nose low, sniffing for food."><figcaption>On the hunt</figcaption></figure></a></li>
+        <li><a href="gallery-2.html"><figure><img src="images/walking-in-grass.jpg" alt="A honey badger stands in dry grass and lifts its head to look around."><figcaption>Head up in the dry grass</figcaption></figure></a></li>
+        <li><a href="gallery-3.html"><figure><img src="images/on-the-move.jpg" alt="A honey badger with a muddy brown coat walks through green grass."><figcaption>Muddy and on the move</figcaption></figure></a></li>
+        <li><a href="gallery-4.html"><figure><img src="images/drinking.jpg" alt="A camera trap photo of an Indian honey badger drinking from a stream at night."><figcaption>A night-time drink in India</figcaption></figure></a></li>
+      </ul>
+    </section>
+
+    <section id="submit">
+      <h2>Share your own honey badger photo</h2>
+      <p>Have you seen a honey badger in the wild or at a zoo? We would love to add your picture to the gallery.</p>
+      <form class="submit-form" data-submit-photo>
+        <label for="name">Your name</label>
+        <input id="name" name="name" required>
+        <label for="photo">Photo</label>
+        <input id="photo" name="photo" type="file" accept="image/*" required>
+        <label for="story">Where and when did you take it?</label>
+        <textarea id="story" name="story" rows="3"></textarea>
+        <button class="button" type="submit">Send photo</button>
+      </form>
+      <p class="thanks" data-thanks hidden>Thank you! We will review your photo soon.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Honey Badger Fan Site &middot; Team #2 &middot; Applying Professional Scrum</p>
+  </footer>
+  <script src="submit-photo.js"></script>
+</body>
+</html>
