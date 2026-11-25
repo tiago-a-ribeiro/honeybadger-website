@@ -25,79 +25,182 @@
   </header>
 
   <main class="content">
-    <header class="page-header">
+    <div data-trail-page>
+    <header class="page-header trail-header">
       <div>
-        <h1>Project Helper</h1>
-        <p>Are you making a poster, slides, or a report about honey badgers? Here is how to make it great!</p>
+        <h1>Project Adventure</h1>
+        <p>Making a poster, slides, or a report about honey badgers? Follow the trail! Finish all 6 stops to earn your badge.</p>
+        <div class="trail-progress">
+          <progress max="6" value="0" data-progress aria-label="Stops done"></progress>
+          <p data-progress-text>0 of 6 stops done</p>
+        </div>
       </div>
-      <div class="media"><img src="images/badger.svg" width="400" height="240" alt="A drawing of a honey badger"><a class="download" href="images/downloads/badger.png" download="honey-badger-badger.png" aria-label="Download this image to add to your own project!"><span aria-hidden="true">⬇️</span><span class="download-tip" aria-hidden="true">Download this image to add to your own project!</span></a></div>
+      <img class="badge-preview" src="images/expert-badge.svg" width="300" height="320" alt="The Honey Badger Expert badge you can earn">
     </header>
 
-    <section>
-      <h2>Making a poster or slides</h2>
-      <ol class="steps">
-        <li><strong>Pick 3 to 5 topics.</strong> For example: where honey badgers live, what they eat, and how they stay safe. Use the menu at the top of this site to find each topic.</li>
-        <li><strong>Read each page.</strong> Write down the facts you like best. The "Learn more" parts have extra facts for big projects.</li>
-        <li><strong>Make one part for each topic.</strong> Give it a title and 2 or 3 short facts.</li>
-        <li><strong>Add a picture.</strong> Every picture on this site has a ⬇️ button. Tap it to download the picture. Remember to copy who made it too!</li>
-        <li><strong>Use comparisons.</strong> "As tall as your knee" is easier to picture than "25 centimeters". You can find comparisons on the <a href="anatomy.html">Its body</a> page.</li>
-        <li><strong>Finish with a fun fact</strong> to surprise your audience. Look for the "Did you know?" boxes.</li>
-        <li><strong>Practice out loud</strong> before you present. Look at your audience and speak slowly.</li>
-      </ol>
-    </section>
+    <ol class="trail">
+      <li class="stop" data-stop="1">
+        <div class="stop-marker" aria-hidden="true"><span class="stop-number">1</span><span class="stop-check">✅</span></div>
+        <section class="stop-card">
+          <h2><span class="visually-hidden">Stop 1: </span>Pick your project</h2>
+          <p>What are you making?</p>
+          <div class="choice-row">
+            <button type="button" class="choice" data-project="poster" aria-pressed="false"><span aria-hidden="true">🖼️</span> Poster</button>
+            <button type="button" class="choice" data-project="slides" aria-pressed="false"><span aria-hidden="true">💻</span> Slides</button>
+            <button type="button" class="choice" data-project="report" aria-pressed="false"><span aria-hidden="true">📝</span> Report</button>
+          </div>
+          <div class="tip-box" data-project-tip="none"><p>Tap one to get tips!</p></div>
+          <div class="tip-box" data-project-tip="poster" hidden>
+            <p><strong>Poster tips:</strong> Use a big title and big pictures. Put 2 or 3 short facts under each heading. Make it easy to read from across the room!</p>
+          </div>
+          <div class="tip-box" data-project-tip="slides" hidden>
+            <p><strong>Slides tips:</strong> Make one slide for each topic. Put one picture and 2 or 3 short facts on each slide. Do not put too many words on one slide.</p>
+          </div>
+          <div class="tip-box" data-project-tip="report" hidden>
+            <p><strong>Report tips:</strong> Write a beginning, a middle, and an end. In the middle, write one paragraph for each topic.</p>
+            <p>Stuck? Try a sentence starter:</p>
+            <ul class="starters">
+              <li>The honey badger is a mammal that lives in&hellip;</li>
+              <li>One interesting fact about honey badgers is&hellip;</li>
+              <li>I was surprised to learn that&hellip;</li>
+              <li>In conclusion, honey badgers are&hellip;</li>
+            </ul>
+          </div>
+          <p class="stop-hint">This stop checks itself when you finish it!</p>
+          <button type="button" class="done-button" data-done-button aria-pressed="false">
+            <span class="done-off">I did it! ✅</span><span class="done-on">Done! Tap to undo</span>
+          </button>
+        </section>
+      </li>
 
-    <section>
-      <h2>Writing a report</h2>
-      <p>A good report has a <strong>beginning</strong>, a <strong>middle</strong>, and an <strong>end</strong>.</p>
-      <ul class="fact-list">
-        <li><span class="emoji" aria-hidden="true">1️⃣</span><strong>Beginning</strong>: Say what your report is about and why the honey badger is interesting.</li>
-        <li><span class="emoji" aria-hidden="true">2️⃣</span><strong>Middle</strong>: Write one paragraph for each topic, like habitat, food, and behavior.</li>
-        <li><span class="emoji" aria-hidden="true">3️⃣</span><strong>End</strong>: Sum up what you learned. Say what surprised you most.</li>
-      </ul>
-      <h3>Sentence starters</h3>
-      <p>Stuck? Try starting a sentence like this:</p>
-      <ul class="starters">
-        <li>The honey badger is a mammal that lives in&hellip;</li>
-        <li>One interesting fact about honey badgers is&hellip;</li>
-        <li>Honey badgers find their food by&hellip;</li>
-        <li>To stay safe from predators, a honey badger&hellip;</li>
-        <li>A baby honey badger is called a&hellip;</li>
-        <li>I was surprised to learn that&hellip;</li>
-        <li>In conclusion, honey badgers are&hellip;</li>
-      </ul>
-    </section>
+      <li class="stop" data-stop="2">
+        <div class="stop-marker" aria-hidden="true"><span class="stop-number">2</span><span class="stop-check">✅</span></div>
+        <section class="stop-card">
+          <h2><span class="visually-hidden">Stop 2: </span>Pick your topics</h2>
+          <p>Tap 3 to 5 topics you want to share.</p>
+          <ul class="topic-grid">
+            <li><button type="button" class="topic-pick topic-habitat" data-topic="habitat" aria-pressed="false"><span class="topic-pick-icon" aria-hidden="true">🌍</span>Where it lives</button><a class="topic-read" href="habitat.html">Read it →</a></li>
+            <li><button type="button" class="topic-pick topic-gallery" data-topic="gallery" aria-pressed="false"><span class="topic-pick-icon" aria-hidden="true">📷</span>Photos</button><a class="topic-read" href="gallery.html">Read it →</a></li>
+            <li><button type="button" class="topic-pick topic-classification" data-topic="classification" aria-pressed="false"><span class="topic-pick-icon" aria-hidden="true">🔬</span>Its name</button><a class="topic-read" href="classification.html">Read it →</a></li>
+            <li><button type="button" class="topic-pick topic-diet" data-topic="diet" aria-pressed="false"><span class="topic-pick-icon" aria-hidden="true">🍯</span>What it eats</button><a class="topic-read" href="diet.html">Read it →</a></li>
+            <li><button type="button" class="topic-pick topic-anatomy" data-topic="anatomy" aria-pressed="false"><span class="topic-pick-icon" aria-hidden="true">📏</span>Its body</button><a class="topic-read" href="anatomy.html">Read it →</a></li>
+            <li><button type="button" class="topic-pick topic-reproduction" data-topic="reproduction" aria-pressed="false"><span class="topic-pick-icon" aria-hidden="true">🍼</span>Babies</button><a class="topic-read" href="reproduction.html">Read it →</a></li>
+            <li><button type="button" class="topic-pick topic-behavior" data-topic="behavior" aria-pressed="false"><span class="topic-pick-icon" aria-hidden="true">🐾</span>How it acts</button><a class="topic-read" href="behavior.html">Read it →</a></li>
+          </ul>
+          <p class="topic-count" data-topic-count aria-live="polite">Pick at least 3 topics.</p>
+          <p class="stop-hint">This stop checks itself when you finish it!</p>
+          <button type="button" class="done-button" data-done-button aria-pressed="false">
+            <span class="done-off">I did it! ✅</span><span class="done-on">Done! Tap to undo</span>
+          </button>
+        </section>
+      </li>
 
-    <section>
-      <h2>Use your own words</h2>
-      <p>Copying sentences word for word from a website is not fair. Your teacher wants to hear <em>your</em> ideas! Try this:</p>
-      <ol class="steps">
-        <li>Read a fact.</li>
-        <li>Cover it up.</li>
-        <li>Write it down the way you would say it to a friend.</li>
-        <li>Check the fact again to make sure you got it right.</li>
-      </ol>
-    </section>
+      <li class="stop" data-stop="3">
+        <div class="stop-marker" aria-hidden="true"><span class="stop-number">3</span><span class="stop-check">✅</span></div>
+        <section class="stop-card">
+          <h2><span class="visually-hidden">Stop 3: </span>Collect your facts</h2>
+          <p>Visit each topic page. Tick each box when you are done.</p>
+          <ul class="checklist">
+            <li><label><input type="checkbox" data-check="read"> I read each topic page.</label></li>
+            <li><label><input type="checkbox" data-check="facts"> I wrote down 2 or 3 facts for each topic.</label></li>
+            <li><label><input type="checkbox" data-check="fun"> I found a fun fact in a "Did you know?" box.</label></li>
+            <li><label><input type="checkbox" data-check="compare"> I found a size comparison on the <a href="anatomy.html">Its body</a> page.</label></li>
+          </ul>
+          <p class="stop-hint">This stop checks itself when you finish it!</p>
+          <button type="button" class="done-button" data-done-button aria-pressed="false">
+            <span class="done-off">I did it! ✅</span><span class="done-on">Done! Tap to undo</span>
+          </button>
+        </section>
+      </li>
 
-    <section>
-      <h2>Saying where you found your facts</h2>
-      <p>When you use facts or pictures from a website, you should say where they came from. This is called <strong>citing your source</strong>. Put it at the end of your report or on your last slide.</p>
-      <h3>For facts from this website</h3>
-      <p>Every page has a "For your school project" box at the bottom. Copy the source from it. It looks like this:</p>
-      <p class="citation">Honey Badger HQ. "What Does It Eat?" 2026.</p>
-      <h3>For a picture</h3>
-      <p>The same box tells you who made the picture. Put it under the picture in your project, like this:</p>
-      <p class="citation">Photo by Gerhard Mauracher, from Wikimedia Commons (CC BY-SA 4.0).</p>
-    </section>
+      <li class="stop" data-stop="4">
+        <div class="stop-marker" aria-hidden="true"><span class="stop-number">4</span><span class="stop-check">✅</span></div>
+        <section class="stop-card">
+          <h2><span class="visually-hidden">Stop 4: </span>Use your own words</h2>
+          <p>Copying is not fair. Your teacher wants to hear <em>your</em> ideas! Try it here:</p>
+          <div class="flip-card" data-flip-card>
+            <div class="flip-front" data-flip-front>
+              <p class="flip-label">1. Read this fact:</p>
+              <p data-fact>A honey badger comes up to about your knee.</p>
+              <p data-fact hidden>Honey badgers dig a tunnel called a burrow to sleep in.</p>
+              <p data-fact hidden>A honey badger mom carries her cub to a new burrow every few days.</p>
+              <p data-fact hidden>Some honey badgers walk more than 20 kilometers in one night.</p>
+              <p data-fact hidden>Honey badgers leave their smell on rocks and trees to send messages.</p>
+              <button type="button" class="button" data-hide-fact>Hide the fact 🙈</button>
+            </div>
+            <div class="flip-back" data-flip-back hidden>
+              <label class="flip-label" for="own-words">2. Now write it your way:</label>
+              <textarea id="own-words" rows="3" placeholder="Write it like you would tell a friend"></textarea>
+              <div class="choice-row">
+                <button type="button" class="button" data-show-fact>Check the fact 👀</button>
+                <button type="button" class="button" data-next-fact>Try another fact ➡️</button>
+              </div>
+            </div>
+          </div>
+          
+          <button type="button" class="done-button" data-done-button aria-pressed="false">
+            <span class="done-off">I did it! ✅</span><span class="done-on">Done! Tap to undo</span>
+          </button>
+        </section>
+      </li>
 
-    <section>
-      <h2>Words to know</h2>
-      <ul class="fact-list">
-        <li><span class="emoji" aria-hidden="true">📚</span><strong>Source</strong>: The place where you found a fact or picture, like a book or a website.</li>
-        <li><span class="emoji" aria-hidden="true">✍️</span><strong>Cite</strong>: To say where you found a fact or picture.</li>
-        <li><span class="emoji" aria-hidden="true">📸</span><strong>Credit</strong>: A note that says who took a photo or made something.</li>
-        <li><span class="emoji" aria-hidden="true">🎤</span><strong>Presentation</strong>: A talk you give to share what you learned, often with slides or a poster.</li>
-      </ul>
+      <li class="stop" data-stop="5">
+        <div class="stop-marker" aria-hidden="true"><span class="stop-number">5</span><span class="stop-check">✅</span></div>
+        <section class="stop-card">
+          <h2><span class="visually-hidden">Stop 5: </span>Add a picture</h2>
+          <p>Pictures make your project shine! Every picture on this site has a ⬇️ button. Tap it to download the picture.</p>
+          <div class="two-col">
+            <div class="media"><img src="images/dry-ground.jpg" width="1200" height="850" alt="A honey badger walking across dry, dusty ground" loading="lazy"><a class="download" href="images/dry-ground.jpg" download="honey-badger-dry-ground.jpg" aria-label="Download this image to add to your own project!"><span aria-hidden="true">⬇️</span><span class="download-tip" aria-hidden="true">Download this image to add to your own project!</span></a></div>
+            <div>
+              <p>Always write who made the picture under it. This is called a <strong>credit</strong>. Try copying this one:</p>
+              <p class="citation" id="credit-example">Photo by Gerhard Mauracher, from Wikimedia Commons (CC BY-SA 4.0).</p>
+              <button type="button" class="button" data-copy-target="credit-example"><span data-copy-label>Copy 📋</span></button>
+            </div>
+          </div>
+          
+          <button type="button" class="done-button" data-done-button aria-pressed="false">
+            <span class="done-off">I did it! ✅</span><span class="done-on">Done! Tap to undo</span>
+          </button>
+        </section>
+      </li>
+
+      <li class="stop" data-stop="6">
+        <div class="stop-marker" aria-hidden="true"><span class="stop-number">6</span><span class="stop-check">✅</span></div>
+        <section class="stop-card">
+          <h2><span class="visually-hidden">Stop 6: </span>Say where you found it</h2>
+          <p>At the end of your project, write where you found your facts. This is called <strong>citing your source</strong>.</p>
+          <label class="flip-label" for="cite-page">Which page did you use?</label>
+          <select id="cite-page" class="cite-select" data-cite-select>
+              <option value="Meet the Honey Badger!">Home</option>
+              <option value="Where Does It Live?">Where it lives</option>
+              <option value="Honey Badger Photos">Photos</option>
+              <option value="What Is Its Name?">Its name</option>
+              <option value="What Does It Eat?">What it eats</option>
+              <option value="How Big Is It?">Its body</option>
+              <option value="Honey Badger Babies">Babies</option>
+              <option value="How Does It Act?">How it acts</option>
+          </select>
+          <p class="citation" id="cite-output" data-cite-output>Honey Badger HQ. "Meet the Honey Badger!" 2026.</p>
+          <button type="button" class="button" data-copy-target="cite-output"><span data-copy-label>Copy 📋</span></button>
+          
+          <button type="button" class="done-button" data-done-button aria-pressed="false">
+            <span class="done-off">I did it! ✅</span><span class="done-on">Done! Tap to undo</span>
+          </button>
+        </section>
+      </li>
+
+    </ol>
+
+    <section class="badge-reward" data-badge hidden>
+      <img src="images/expert-badge.svg" width="300" height="320" alt="Your Honey Badger Expert badge">
+      <div>
+        <h2>You did it! 🎉</h2>
+        <p>You finished the whole trail. You are now a <strong>Honey Badger Expert</strong>!</p>
+        <p>Go make an amazing project. Good luck!</p>
+        <button type="button" class="button" data-restart>Start a new project 🔄</button>
+      </div>
     </section>
+    </div>
 
   </main>
 
@@ -109,5 +212,6 @@
     </ul>
     <p>Honey Badger HQ · A fan site for the world's most fearless <span class="term" tabindex="0">mustelid<span class="term-tip" role="tooltip"><strong>Mustelid:</strong> An animal in the weasel family. Otters, weasels, wolverines, and honey badgers are all mustelids.</span></span>.</p>
   </footer>
+  <script src="js/project-trail.js"></script>
 </body>
 </html>

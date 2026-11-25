@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 320" role="img">
+  <title>A Honey Badger Expert badge with a honey badger inside a honey-colored hexagon</title>
+<polygon points="150,14 260,78 260,206 150,270 40,206 40,78" fill="#ffd98a" stroke="#1d1b18" stroke-width="8" stroke-linejoin="round"/>
+  <polygon points="150,40 238,91 238,193 150,244 62,193 62,91" fill="#fff3d6"/>
+  <g transform="translate(40 70) scale(0.55)">
+  <path d="M335 118 Q362 100 368 112 Q360 128 338 132 Z" fill="#1d1b18"/>
+  <rect x="112" y="160" width="30" height="60" rx="12" fill="#1d1b18"/>
+  <rect x="158" y="165" width="30" height="55" rx="12" fill="#1d1b18"/>
+  <rect x="250" y="165" width="30" height="55" rx="12" fill="#1d1b18"/>
+  <rect x="296" y="160" width="30" height="60" rx="12" fill="#1d1b18"/>
+  <ellipse cx="225" cy="140" rx="120" ry="52" fill="#1d1b18"/>
+  <ellipse cx="88" cy="142" rx="52" ry="38" fill="#1d1b18"/>
+  <path d="M42 148 Q30 152 34 160 Q48 164 60 158 Z" fill="#1d1b18"/>
+  <path d="M58 128 Q90 96 150 100 Q230 80 335 108 Q348 114 340 126 Q250 112 150 124 Q100 128 62 140 Z" fill="#e8e4d8"/>
+  <circle cx="112" cy="110" r="9" fill="#e8e4d8"/>
+  <circle cx="76" cy="142" r="5" fill="#fff"/>
+  <circle cx="75" cy="142" r="3" fill="#1d1b18"/>
+  <circle cx="35" cy="154" r="4" fill="#5c564c"/>
+</g>
+  <rect x="20" y="238" width="260" height="56" rx="14" fill="#f28c6f" stroke="#1d1b18" stroke-width="5"/>
+  <text x="150" y="274" text-anchor="middle" font-size="19" font-family="system-ui, -apple-system, sans-serif" font-weight="700" fill="#fff">HONEY BADGER EXPERT</text>
+</svg>
