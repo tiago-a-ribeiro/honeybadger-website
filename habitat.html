@@ -11,15 +11,15 @@
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
       <ul>
-        <li><a href="index.html"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
-        <li><a href="habitat.html" aria-current="page"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
-        <li><a href="gallery.html"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
-        <li><a href="classification.html"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
-        <li><a href="diet.html"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
-        <li><a href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
-        <li><a href="reproduction.html"><span class="nav-icon" aria-hidden="true">🍼</span><span>Babies</span></a></li>
-        <li><a href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
-        <li><a href="project-helper.html"><span class="nav-icon" aria-hidden="true">🎒</span><span>Project helper</span></a></li>
+        <li><a class="topic-home" href="index.html"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
+        <li><a class="topic-habitat" href="habitat.html" aria-current="page"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
+        <li><a class="topic-gallery" href="gallery.html"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
+        <li><a class="topic-classification" href="classification.html"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
+        <li><a class="topic-diet" href="diet.html"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
+        <li><a class="topic-anatomy" href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
+        <li><a class="topic-reproduction" href="reproduction.html"><span class="nav-icon" aria-hidden="true">🍼</span><span>Babies</span></a></li>
+        <li><a class="topic-behavior" href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
+        <li><a class="topic-helper" href="project-helper.html"><span class="nav-icon" aria-hidden="true">🎒</span><span>Project helper</span></a></li>
       </ul>
     </nav>
   </header>
@@ -92,19 +92,39 @@
       <aside class="question"><h2>Think about it</h2><p>If you were a honey badger, would you rather sleep under the ground or in a tree?</p></aside>
     </section>
 
-    <section class="learn-more">
-      <h2>Learn more: a very big backyard</h2>
-        <p>A honey badger does not stay in one small place. It walks around a huge area to find enough food. This area is called its <span class="term" tabindex="0">home range<span class="term-tip" role="tooltip"><strong>Home range:</strong> The whole area an animal travels around to find food and places to rest.</span></span>.</p>
+    <div class="learn-more">
+      <button type="button" class="learn-more-button" data-dialog-open="learn-a-very-big-backyard">
+        <span class="learn-more-icon" aria-hidden="true">🔎</span>
+        <span class="learn-more-text"><span class="learn-more-kicker">Learn more</span><span class="learn-more-title">A very big backyard</span></span>
+        <span class="learn-more-go" aria-hidden="true">➜</span>
+      </button>
+      <dialog id="learn-a-very-big-backyard" class="learn-more-dialog" aria-labelledby="learn-a-very-big-backyard-title">
+        <div class="dialog-body">
+          <h2 id="learn-a-very-big-backyard-title" tabindex="-1" autofocus>🔎 A very big backyard</h2>
+          <p>A honey badger does not stay in one small place. It walks around a huge area to find enough food. This area is called its <span class="term" tabindex="0">home range<span class="term-tip" role="tooltip"><strong>Home range:</strong> The whole area an animal travels around to find food and places to rest.</span></span>.</p>
         <p>Scientists in the Kalahari Desert in southern Africa put trackers on honey badgers. They found that a male's home range can be hundreds of square kilometers. That is bigger than many cities!</p>
         <p>Females usually have smaller home ranges than males. A male's home range often overlaps with the home ranges of several females.</p>
-    </section>
+          <button type="button" class="button" data-dialog-close>Close ✖</button>
+        </div>
+      </dialog>
+    </div>
 
-    <section class="learn-more">
-      <h2>Learn more: honey badgers and people</h2>
-        <p>Honey badgers sometimes break into beehives that farmers keep to make honey. This can make beekeepers upset.</p>
+    <div class="learn-more">
+      <button type="button" class="learn-more-button" data-dialog-open="learn-honey-badgers-and-people">
+        <span class="learn-more-icon" aria-hidden="true">🔎</span>
+        <span class="learn-more-text"><span class="learn-more-kicker">Learn more</span><span class="learn-more-title">Honey badgers and people</span></span>
+        <span class="learn-more-go" aria-hidden="true">➜</span>
+      </button>
+      <dialog id="learn-honey-badgers-and-people" class="learn-more-dialog" aria-labelledby="learn-honey-badgers-and-people-title">
+        <div class="dialog-body">
+          <h2 id="learn-honey-badgers-and-people-title" tabindex="-1" autofocus>🔎 Honey badgers and people</h2>
+          <p>Honey badgers sometimes break into beehives that farmers keep to make honey. This can make beekeepers upset.</p>
         <p>Some beekeepers in Africa found a clever fix. They put their beehives up high on stands or hang them from trees, where honey badgers cannot reach them. This keeps the bees safe and the honey badgers safe too.</p>
         <p>Scientists say honey badgers are not in danger of dying out right now. But <span class="term" tabindex="0">conservation<span class="term-tip" role="tooltip"><strong>Conservation:</strong> Taking care of animals and nature so they stay safe for a long time.</span></span> is still important, so people and honey badgers can share the land.</p>
-    </section>
+          <button type="button" class="button" data-dialog-close>Close ✖</button>
+        </div>
+      </dialog>
+    </div>
 
     <aside class="project-box">
       <h2>For your school project</h2>
@@ -125,6 +145,7 @@
     </ul>
     <p>Honey Badger HQ · A fan site for the world's most fearless <span class="term" tabindex="0">mustelid<span class="term-tip" role="tooltip"><strong>Mustelid:</strong> An animal in the weasel family. Otters, weasels, wolverines, and honey badgers are all mustelids.</span></span>.</p>
   </footer>
+  <script src="js/learn-more.js"></script>
   <script src="js/map.js"></script>
 </body>
 </html>

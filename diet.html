@@ -11,15 +11,15 @@
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
       <ul>
-        <li><a href="index.html"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
-        <li><a href="habitat.html"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
-        <li><a href="gallery.html"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
-        <li><a href="classification.html"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
-        <li><a href="diet.html" aria-current="page"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
-        <li><a href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
-        <li><a href="reproduction.html"><span class="nav-icon" aria-hidden="true">🍼</span><span>Babies</span></a></li>
-        <li><a href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
-        <li><a href="project-helper.html"><span class="nav-icon" aria-hidden="true">🎒</span><span>Project helper</span></a></li>
+        <li><a class="topic-home" href="index.html"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
+        <li><a class="topic-habitat" href="habitat.html"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
+        <li><a class="topic-gallery" href="gallery.html"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
+        <li><a class="topic-classification" href="classification.html"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
+        <li><a class="topic-diet" href="diet.html" aria-current="page"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
+        <li><a class="topic-anatomy" href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
+        <li><a class="topic-reproduction" href="reproduction.html"><span class="nav-icon" aria-hidden="true">🍼</span><span>Babies</span></a></li>
+        <li><a class="topic-behavior" href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
+        <li><a class="topic-helper" href="project-helper.html"><span class="nav-icon" aria-hidden="true">🎒</span><span>Project helper</span></a></li>
       </ul>
     </nav>
   </header>
@@ -62,18 +62,38 @@
       <aside class="question"><h2>Think about it</h2><p>What is your favorite food? Would a honey badger like it too?</p></aside>
     </section>
 
-    <section class="learn-more">
-      <h2>Learn more: a hunter that digs</h2>
-        <p>A honey badger is a <span class="term" tabindex="0">carnivore<span class="term-tip" role="tooltip"><strong>Carnivore:</strong> An animal that eats mostly meat.</span></span> most of the time. Its main way to hunt is digging. It walks with its nose close to the ground and sniffs for small animals hiding in holes.</p>
+    <div class="learn-more">
+      <button type="button" class="learn-more-button" data-dialog-open="learn-a-hunter-that-digs">
+        <span class="learn-more-icon" aria-hidden="true">🔎</span>
+        <span class="learn-more-text"><span class="learn-more-kicker">Learn more</span><span class="learn-more-title">A hunter that digs</span></span>
+        <span class="learn-more-go" aria-hidden="true">➜</span>
+      </button>
+      <dialog id="learn-a-hunter-that-digs" class="learn-more-dialog" aria-labelledby="learn-a-hunter-that-digs-title">
+        <div class="dialog-body">
+          <h2 id="learn-a-hunter-that-digs-title" tabindex="-1" autofocus>🔎 A hunter that digs</h2>
+          <p>A honey badger is a <span class="term" tabindex="0">carnivore<span class="term-tip" role="tooltip"><strong>Carnivore:</strong> An animal that eats mostly meat.</span></span> most of the time. Its main way to hunt is digging. It walks with its nose close to the ground and sniffs for small animals hiding in holes.</p>
         <p>When it smells <span class="term" tabindex="0">prey<span class="term-tip" role="tooltip"><strong>Prey:</strong> An animal that other animals hunt for food.</span></span>, it digs very fast with its long front claws. It can dig dozens of holes in one day! Many of the animals it catches are mice, gerbils, and other rodents that hide underground.</p>
         <p>Honey badgers do not waste much. They often eat almost all of a small animal, and their strong teeth can crunch hard food like turtle shells.</p>
-    </section>
+          <button type="button" class="button" data-dialog-close>Close ✖</button>
+        </div>
+      </dialog>
+    </div>
 
-    <section class="learn-more">
-      <h2>Learn more: getting water</h2>
-        <p>Many honey badgers live in dry places where it does not rain much. They drink water when they find it, like the honey badger in our gallery.</p>
+    <div class="learn-more">
+      <button type="button" class="learn-more-button" data-dialog-open="learn-getting-water">
+        <span class="learn-more-icon" aria-hidden="true">🔎</span>
+        <span class="learn-more-text"><span class="learn-more-kicker">Learn more</span><span class="learn-more-title">Getting water</span></span>
+        <span class="learn-more-go" aria-hidden="true">➜</span>
+      </button>
+      <dialog id="learn-getting-water" class="learn-more-dialog" aria-labelledby="learn-getting-water-title">
+        <div class="dialog-body">
+          <h2 id="learn-getting-water-title" tabindex="-1" autofocus>🔎 Getting water</h2>
+          <p>Many honey badgers live in dry places where it does not rain much. They drink water when they find it, like the honey badger in our gallery.</p>
         <p>When there is no water around, honey badgers can get much of the water they need from the food they eat. Juicy fruits, roots, and small animals all have water inside them.</p>
-    </section>
+          <button type="button" class="button" data-dialog-close>Close ✖</button>
+        </div>
+      </dialog>
+    </div>
 
     <aside class="project-box">
       <h2>For your school project</h2>
@@ -94,5 +114,6 @@
     </ul>
     <p>Honey Badger HQ · A fan site for the world's most fearless <span class="term" tabindex="0">mustelid<span class="term-tip" role="tooltip"><strong>Mustelid:</strong> An animal in the weasel family. Otters, weasels, wolverines, and honey badgers are all mustelids.</span></span>.</p>
   </footer>
+  <script src="js/learn-more.js"></script>
 </body>
 </html>

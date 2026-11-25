@@ -11,15 +11,15 @@
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
       <ul>
-        <li><a href="index.html"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
-        <li><a href="habitat.html"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
-        <li><a href="gallery.html"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
-        <li><a href="classification.html" aria-current="page"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
-        <li><a href="diet.html"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
-        <li><a href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
-        <li><a href="reproduction.html"><span class="nav-icon" aria-hidden="true">🍼</span><span>Babies</span></a></li>
-        <li><a href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
-        <li><a href="project-helper.html"><span class="nav-icon" aria-hidden="true">🎒</span><span>Project helper</span></a></li>
+        <li><a class="topic-home" href="index.html"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
+        <li><a class="topic-habitat" href="habitat.html"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
+        <li><a class="topic-gallery" href="gallery.html"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
+        <li><a class="topic-classification" href="classification.html" aria-current="page"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
+        <li><a class="topic-diet" href="diet.html"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
+        <li><a class="topic-anatomy" href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
+        <li><a class="topic-reproduction" href="reproduction.html"><span class="nav-icon" aria-hidden="true">🍼</span><span>Babies</span></a></li>
+        <li><a class="topic-behavior" href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
+        <li><a class="topic-helper" href="project-helper.html"><span class="nav-icon" aria-hidden="true">🎒</span><span>Project helper</span></a></li>
       </ul>
     </nav>
   </header>
@@ -84,12 +84,22 @@
       </details>
     </section>
 
-    <section class="learn-more">
-      <h2>Learn more: why science names matter</h2>
-        <p>People around the world speak many languages, so the honey badger has many common names. In some places it is called a ratel. Science names are the same in every country, so scientists always know which animal they mean.</p>
+    <div class="learn-more">
+      <button type="button" class="learn-more-button" data-dialog-open="learn-why-science-names-matter">
+        <span class="learn-more-icon" aria-hidden="true">🔎</span>
+        <span class="learn-more-text"><span class="learn-more-kicker">Learn more</span><span class="learn-more-title">Why science names matter</span></span>
+        <span class="learn-more-go" aria-hidden="true">➜</span>
+      </button>
+      <dialog id="learn-why-science-names-matter" class="learn-more-dialog" aria-labelledby="learn-why-science-names-matter-title">
+        <div class="dialog-body">
+          <h2 id="learn-why-science-names-matter-title" tabindex="-1" autofocus>🔎 Why science names matter</h2>
+          <p>People around the world speak many languages, so the honey badger has many common names. In some places it is called a ratel. Science names are the same in every country, so scientists always know which animal they mean.</p>
         <p>Every science name has two parts. The first part is the genus, a small group of close relatives. The second part is the species. Together, <em>Mellivora capensis</em> names exactly one kind of animal.</p>
         <p>The honey badger is in the meat-eater group called Carnivora. Cats, dogs, bears, and seals are in this group too! Animals in it are called <span class="term" tabindex="0">carnivores<span class="term-tip" role="tooltip"><strong>Carnivore:</strong> An animal that eats mostly meat.</span></span>, even though some of them, like the honey badger, eat plants sometimes.</p>
-    </section>
+          <button type="button" class="button" data-dialog-close>Close ✖</button>
+        </div>
+      </dialog>
+    </div>
 
     <aside class="project-box">
       <h2>For your school project</h2>
@@ -110,5 +120,6 @@
     </ul>
     <p>Honey Badger HQ · A fan site for the world's most fearless <span class="term" tabindex="0">mustelid<span class="term-tip" role="tooltip"><strong>Mustelid:</strong> An animal in the weasel family. Otters, weasels, wolverines, and honey badgers are all mustelids.</span></span>.</p>
   </footer>
+  <script src="js/learn-more.js"></script>
 </body>
 </html>

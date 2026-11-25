@@ -11,15 +11,15 @@
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
       <ul>
-        <li><a href="index.html"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
-        <li><a href="habitat.html"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
-        <li><a href="gallery.html" aria-current="page"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
-        <li><a href="classification.html"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
-        <li><a href="diet.html"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
-        <li><a href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
-        <li><a href="reproduction.html"><span class="nav-icon" aria-hidden="true">🍼</span><span>Babies</span></a></li>
-        <li><a href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
-        <li><a href="project-helper.html"><span class="nav-icon" aria-hidden="true">🎒</span><span>Project helper</span></a></li>
+        <li><a class="topic-home" href="index.html"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
+        <li><a class="topic-habitat" href="habitat.html"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
+        <li><a class="topic-gallery" href="gallery.html" aria-current="page"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
+        <li><a class="topic-classification" href="classification.html"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
+        <li><a class="topic-diet" href="diet.html"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
+        <li><a class="topic-anatomy" href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
+        <li><a class="topic-reproduction" href="reproduction.html"><span class="nav-icon" aria-hidden="true">🍼</span><span>Babies</span></a></li>
+        <li><a class="topic-behavior" href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
+        <li><a class="topic-helper" href="project-helper.html"><span class="nav-icon" aria-hidden="true">🎒</span><span>Project helper</span></a></li>
       </ul>
     </nav>
   </header>
@@ -42,12 +42,22 @@
       </ul>
     </section>
 
-    <section class="learn-more">
-      <h2>Learn more: looking like a scientist</h2>
-        <p>When scientists look at a photo of an animal, they ask questions. Where was it taken? What is the animal doing? What time of day is it?</p>
+    <div class="learn-more">
+      <button type="button" class="learn-more-button" data-dialog-open="learn-looking-like-a-scientist">
+        <span class="learn-more-icon" aria-hidden="true">🔎</span>
+        <span class="learn-more-text"><span class="learn-more-kicker">Learn more</span><span class="learn-more-title">Looking like a scientist</span></span>
+        <span class="learn-more-go" aria-hidden="true">➜</span>
+      </button>
+      <dialog id="learn-looking-like-a-scientist" class="learn-more-dialog" aria-labelledby="learn-looking-like-a-scientist-title">
+        <div class="dialog-body">
+          <h2 id="learn-looking-like-a-scientist-title" tabindex="-1" autofocus>🔎 Looking like a scientist</h2>
+          <p>When scientists look at a photo of an animal, they ask questions. Where was it taken? What is the animal doing? What time of day is it?</p>
         <p>Try it with these photos! Look for clues like dry grass, mud, or darkness. Each clue tells you something about how honey badgers live.</p>
         <p>Every photo page has a download button. You can use these photos in your project, as long as you write down who took the photo.</p>
-    </section>
+          <button type="button" class="button" data-dialog-close>Close ✖</button>
+        </div>
+      </dialog>
+    </div>
 
     <aside class="project-box">
       <h2>For your school project</h2>
@@ -68,5 +78,6 @@
     </ul>
     <p>Honey Badger HQ · A fan site for the world's most fearless <span class="term" tabindex="0">mustelid<span class="term-tip" role="tooltip"><strong>Mustelid:</strong> An animal in the weasel family. Otters, weasels, wolverines, and honey badgers are all mustelids.</span></span>.</p>
   </footer>
+  <script src="js/learn-more.js"></script>
 </body>
 </html>

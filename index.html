@@ -11,15 +11,15 @@
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
       <ul>
-        <li><a href="index.html" aria-current="page"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
-        <li><a href="habitat.html"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
-        <li><a href="gallery.html"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
-        <li><a href="classification.html"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
-        <li><a href="diet.html"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
-        <li><a href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
-        <li><a href="reproduction.html"><span class="nav-icon" aria-hidden="true">🍼</span><span>Babies</span></a></li>
-        <li><a href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
-        <li><a href="project-helper.html"><span class="nav-icon" aria-hidden="true">🎒</span><span>Project helper</span></a></li>
+        <li><a class="topic-home" href="index.html" aria-current="page"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
+        <li><a class="topic-habitat" href="habitat.html"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
+        <li><a class="topic-gallery" href="gallery.html"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
+        <li><a class="topic-classification" href="classification.html"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
+        <li><a class="topic-diet" href="diet.html"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
+        <li><a class="topic-anatomy" href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
+        <li><a class="topic-reproduction" href="reproduction.html"><span class="nav-icon" aria-hidden="true">🍼</span><span>Babies</span></a></li>
+        <li><a class="topic-behavior" href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
+        <li><a class="topic-helper" href="project-helper.html"><span class="nav-icon" aria-hidden="true">🎒</span><span>Project helper</span></a></li>
       </ul>
     </nav>
   </header>
@@ -50,12 +50,22 @@
       </ul>
     </section>
 
-    <section class="learn-more">
-      <h2>Why are honey badgers famous?</h2>
-        <p>Honey badgers are famous for being fearless. They are not very big, but they will stand up to animals much bigger than they are, like lions and leopards.</p>
+    <div class="learn-more">
+      <button type="button" class="learn-more-button" data-dialog-open="learn-why-are-honey-badgers-famous">
+        <span class="learn-more-icon" aria-hidden="true">🔎</span>
+        <span class="learn-more-text"><span class="learn-more-kicker">Learn more</span><span class="learn-more-title">Why are honey badgers famous?</span></span>
+        <span class="learn-more-go" aria-hidden="true">➜</span>
+      </button>
+      <dialog id="learn-why-are-honey-badgers-famous" class="learn-more-dialog" aria-labelledby="learn-why-are-honey-badgers-famous-title">
+        <div class="dialog-body">
+          <h2 id="learn-why-are-honey-badgers-famous-title" tabindex="-1" autofocus>🔎 Why are honey badgers famous?</h2>
+          <p>Honey badgers are famous for being fearless. They are not very big, but they will stand up to animals much bigger than they are, like lions and leopards.</p>
         <p>They are also very good at digging, and they are clever problem solvers. Scientists who study them say they are curious and stubborn. When a honey badger wants something, it keeps trying until it gets it!</p>
         <p>Even though they are tough, honey badgers are a <span class="term" tabindex="0">mammal<span class="term-tip" role="tooltip"><strong>Mammal:</strong> An animal with fur or hair that drinks milk from its mom when it is a baby. You are a mammal too!</span></span> just like dogs, cats, and you. They have fur, and their babies drink milk from their moms.</p>
-    </section>
+          <button type="button" class="button" data-dialog-close>Close ✖</button>
+        </div>
+      </dialog>
+    </div>
 
     <aside class="project-box">
       <h2>For your school project</h2>
@@ -76,5 +86,6 @@
     </ul>
     <p>Honey Badger HQ · A fan site for the world's most fearless <span class="term" tabindex="0">mustelid<span class="term-tip" role="tooltip"><strong>Mustelid:</strong> An animal in the weasel family. Otters, weasels, wolverines, and honey badgers are all mustelids.</span></span>.</p>
   </footer>
+  <script src="js/learn-more.js"></script>
 </body>
 </html>

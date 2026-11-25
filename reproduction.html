@@ -11,15 +11,15 @@
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
       <ul>
-        <li><a href="index.html"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
-        <li><a href="habitat.html"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
-        <li><a href="gallery.html"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
-        <li><a href="classification.html"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
-        <li><a href="diet.html"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
-        <li><a href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
-        <li><a href="reproduction.html" aria-current="page"><span class="nav-icon" aria-hidden="true">🍼</span><span>Babies</span></a></li>
-        <li><a href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
-        <li><a href="project-helper.html"><span class="nav-icon" aria-hidden="true">🎒</span><span>Project helper</span></a></li>
+        <li><a class="topic-home" href="index.html"><span class="nav-icon" aria-hidden="true">🏠</span><span>Home</span></a></li>
+        <li><a class="topic-habitat" href="habitat.html"><span class="nav-icon" aria-hidden="true">🌍</span><span>Where it lives</span></a></li>
+        <li><a class="topic-gallery" href="gallery.html"><span class="nav-icon" aria-hidden="true">📷</span><span>Photos</span></a></li>
+        <li><a class="topic-classification" href="classification.html"><span class="nav-icon" aria-hidden="true">🔬</span><span>Its name</span></a></li>
+        <li><a class="topic-diet" href="diet.html"><span class="nav-icon" aria-hidden="true">🍯</span><span>What it eats</span></a></li>
+        <li><a class="topic-anatomy" href="anatomy.html"><span class="nav-icon" aria-hidden="true">📏</span><span>Its body</span></a></li>
+        <li><a class="topic-reproduction" href="reproduction.html" aria-current="page"><span class="nav-icon" aria-hidden="true">🍼</span><span>Babies</span></a></li>
+        <li><a class="topic-behavior" href="behavior.html"><span class="nav-icon" aria-hidden="true">🐾</span><span>How it acts</span></a></li>
+        <li><a class="topic-helper" href="project-helper.html"><span class="nav-icon" aria-hidden="true">🎒</span><span>Project helper</span></a></li>
       </ul>
     </nav>
   </header>
@@ -67,18 +67,38 @@
       <aside class="question"><h2>Think about it</h2><p>What is something a grown-up taught you, like a honey badger mom teaches her cub?</p></aside>
     </section>
 
-    <section class="learn-more">
-      <h2>Learn more: a busy mom</h2>
-        <p>A honey badger mom has a lot of work to do. She has to find food for herself, feed her cub milk, and keep it safe, all on her own.</p>
+    <div class="learn-more">
+      <button type="button" class="learn-more-button" data-dialog-open="learn-a-busy-mom">
+        <span class="learn-more-icon" aria-hidden="true">🔎</span>
+        <span class="learn-more-text"><span class="learn-more-kicker">Learn more</span><span class="learn-more-title">A busy mom</span></span>
+        <span class="learn-more-go" aria-hidden="true">➜</span>
+      </button>
+      <dialog id="learn-a-busy-mom" class="learn-more-dialog" aria-labelledby="learn-a-busy-mom-title">
+        <div class="dialog-body">
+          <h2 id="learn-a-busy-mom-title" tabindex="-1" autofocus>🔎 A busy mom</h2>
+          <p>A honey badger mom has a lot of work to do. She has to find food for herself, feed her cub milk, and keep it safe, all on her own.</p>
         <p>When she goes out to find food, she leaves the young cub hidden in the burrow. Moving the cub to a new burrow often makes it harder for other animals to find it.</p>
         <p>Because she spends so long raising each cub, a honey badger mom does not have many babies in her life. That is why every cub is so important!</p>
-    </section>
+          <button type="button" class="button" data-dialog-close>Close ✖</button>
+        </div>
+      </dialog>
+    </div>
 
-    <section class="learn-more">
-      <h2>Learn more: learning to be a honey badger</h2>
-        <p>Young honey badgers are not born knowing everything. They learn by watching their mom and copying her.</p>
+    <div class="learn-more">
+      <button type="button" class="learn-more-button" data-dialog-open="learn-learning-to-be-a-honey-badger">
+        <span class="learn-more-icon" aria-hidden="true">🔎</span>
+        <span class="learn-more-text"><span class="learn-more-kicker">Learn more</span><span class="learn-more-title">Learning to be a honey badger</span></span>
+        <span class="learn-more-go" aria-hidden="true">➜</span>
+      </button>
+      <dialog id="learn-learning-to-be-a-honey-badger" class="learn-more-dialog" aria-labelledby="learn-learning-to-be-a-honey-badger-title">
+        <div class="dialog-body">
+          <h2 id="learn-learning-to-be-a-honey-badger-title" tabindex="-1" autofocus>🔎 Learning to be a honey badger</h2>
+          <p>Young honey badgers are not born knowing everything. They learn by watching their mom and copying her.</p>
         <p>The cub learns which smells mean food, how to dig quickly, and how to stay safe. By the time it leaves, it is ready to live on its own.</p>
-    </section>
+          <button type="button" class="button" data-dialog-close>Close ✖</button>
+        </div>
+      </dialog>
+    </div>
 
     <aside class="project-box">
       <h2>For your school project</h2>
@@ -99,5 +119,6 @@
     </ul>
     <p>Honey Badger HQ · A fan site for the world's most fearless <span class="term" tabindex="0">mustelid<span class="term-tip" role="tooltip"><strong>Mustelid:</strong> An animal in the weasel family. Otters, weasels, wolverines, and honey badgers are all mustelids.</span></span>.</p>
   </footer>
+  <script src="js/learn-more.js"></script>
 </body>
 </html>
