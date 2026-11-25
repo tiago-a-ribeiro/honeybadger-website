@@ -24,6 +24,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: clip;
+}
+
 body {
   margin: 0;
   font-family: "Atkinson Hyperlegible", "Nunito", "Trebuchet MS", system-ui, sans-serif;
@@ -35,6 +40,11 @@ body {
 
 a {
   color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 :focus-visible {
@@ -552,8 +562,7 @@ a.external::after {
   font-style: normal;
   line-height: 1.4;
   text-align: left;
-  opacity: 0;
-  visibility: hidden;
+  display: none;
   pointer-events: none;
 }
 
@@ -564,8 +573,7 @@ a.external::after {
 
 .download:hover .download-tip,
 .download:focus-visible .download-tip {
-  opacity: 1;
-  visibility: visible;
+  display: block;
 }
 
 .term {
@@ -581,8 +589,7 @@ a.external::after {
 
 .term:hover .term-tip,
 .term:focus .term-tip {
-  opacity: 1;
-  visibility: visible;
+  display: block;
 }
 
 .site-footer .term-tip {
